@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourdough Calculator</title>
+</head>
+<body>
+    <form>
+    <div class="maindiv">
+       <label for="flour">Flour (g)</label> <input type="number" name="flour" id="flour" placeholder="Amount"><br><br>
+       <label for="water">Water (ml)</label> <input type="number" name="water" id="water" placeholder="Amount"><br><br>
+       <label for="starter">Starter (g)</label> <input type="number" name="starter" id="starter" placeholder="Amount"><br><br>
+
+       <button onclick="cleardiv2()" type="reset" id="clear" >Clear</button>
+       
+    </div>
+    </form>
+    <div class="resultdiv">
+        <h1>Totals</h1>
+        <p id="hydration" name="res">Hydration: 0%</p>
+        <p id="s_flour" name="res">flour:0g</p>
+        <p id="s_water" name="res">Water:0ml</p>
+        <p id="s_starter" name="res">Starter:0g</p>
+        <p id="salt" name="res">Salt:0g</p>
+      </div>
+      <script src="script.js"></script>
+</html>
